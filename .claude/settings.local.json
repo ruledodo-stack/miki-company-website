@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:miki-company.tokyo)",
+      "Bash(python3 -m http.server 3000)"
+    ]
+  }
+}
