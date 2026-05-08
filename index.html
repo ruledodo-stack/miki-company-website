@@ -429,7 +429,7 @@
 
       <!-- Form -->
       <div class="reveal" style="transition-delay:0.2s;">
-        <form id="contactForm" onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:20px;">
+        <form id="contactForm" action="https://formspree.io/f/xrejaywp" method="POST" onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:20px;">
           <div>
             <label class="form-label" data-ja="お名前 *" data-en="Name *">お名前 *</label>
             <input type="text" class="form-input" name="name" required placeholder="山田 太郎" data-placeholder-ja="山田 太郎" data-placeholder-en="Taro Yamada">
@@ -531,10 +531,31 @@
     document.body.style.overflow = open ? 'hidden' : '';
   }
 
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
+    const form = document.getElementById('contactForm');
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = lang === 'ja' ? '送信中...' : 'Sending...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+      } else {
+        btn.innerHTML = lang === 'ja' ? '送信に失敗しました。再度お試しください。' : 'Failed. Please try again.';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.innerHTML = lang === 'ja' ? '通信エラーが発生しました。' : 'Network error. Please try again.';
+      btn.disabled = false;
+      setTimeout(() => { btn.innerHTML = originalText; }, 3000);
+    }
   }
 
   // Scroll reveal
