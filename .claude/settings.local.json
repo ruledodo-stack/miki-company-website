@@ -13,7 +13,13 @@
       "Bash(sips -g pixelWidth -g pixelHeight /Users/hwansukjung/Downloads/333.png /Users/hwansukjung/Downloads/444.png)",
       "Bash(convert --version)",
       "Bash(python3 -c \"from PIL import Image; img = Image.open\\('/Users/hwansukjung/Downloads/333.png'\\); bbox = img.getbbox\\(\\); print\\('size:', img.size, 'bbox:', bbox\\)\")",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/hwansukjung/seok_s/miki-company-website/image/mikicompany_logo_00.png /Users/hwansukjung/seok_s/miki-company-website/image/logo-horizontal.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/hwansukjung/seok_s/miki-company-website/레이어 1.png\")",
+      "Bash(sips -g hasAlpha /Users/hwansukjung/seok_s/miki-company-website/image/mikicompany_logo_00.png /Users/hwansukjung/seok_s/miki-company-website/image/logo-horizontal.png)",
+      "Bash(convert '/Users/hwansukjung/seok_s/miki-company-website/image/mikicompany_logo_00.png' -format \"%[fx:u.p{0,0}.a]\" info:)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
