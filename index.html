@@ -139,14 +139,15 @@
       <div class="lang-toggle desktop-nav">
         <button class="lang-btn active" onclick="setLang('ja')">JP</button>
         <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('ko')">KO</button>
       </div>
     </div>
     <div class="desktop-nav" style="display:flex;align-items:center;gap:32px;">
-      <a href="#about" class="nav-link" data-ja="会社概要" data-en="ABOUT">会社概要</a>
-      <a href="#business" class="nav-link" data-ja="事業内容" data-en="BUSINESS">事業内容</a>
-      <a href="#stores" class="nav-link" data-ja="店舗一覧" data-en="STORES">店舗一覧</a>
-      <a href="#recruit" class="nav-link" data-ja="採用情報" data-en="CAREERS">採用情報</a>
-      <a href="#contact" class="nav-link" data-ja="お問い合わせ" data-en="CONTACT">お問い合わせ</a>
+      <a href="#about" class="nav-link" data-ja="会社概要" data-en="ABOUT" data-ko="회사 개요">会社概要</a>
+      <a href="#business" class="nav-link" data-ja="事業内容" data-en="BUSINESS" data-ko="사업 내용" data-ko="사업 내용">事業内容</a>
+      <a href="#stores" class="nav-link" data-ja="店舗一覧" data-en="STORES" data-ko="매장 목록">店舗一覧</a>
+      <a href="#recruit" class="nav-link" data-ja="採用情報" data-en="CAREERS" data-ko="채용 정보" data-ko="채용 정보">採用情報</a>
+      <a href="#contact" class="nav-link" data-ja="お問い合わせ" data-en="CONTACT" data-ko="문의하기" data-ko="문의하기">お問い合わせ</a>
     </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -159,32 +160,33 @@
   <div class="lang-toggle" style="margin-bottom:8px;">
     <button class="lang-btn active" onclick="setLang('ja')">JP</button>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ko')">KO</button>
   </div>
-  <a href="#about" class="mobile-nav-link" onclick="toggleMenu()" data-ja="会社概要" data-en="About">会社概要</a>
-  <a href="#business" class="mobile-nav-link" onclick="toggleMenu()" data-ja="事業内容" data-en="Business">事業内容</a>
-  <a href="#stores" class="mobile-nav-link" onclick="toggleMenu()" data-ja="店舗一覧" data-en="Stores">店舗一覧</a>
-  <a href="#recruit" class="mobile-nav-link" onclick="toggleMenu()" data-ja="採用情報" data-en="Careers">採用情報</a>
-  <a href="#contact" class="mobile-nav-link" onclick="toggleMenu()" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a>
+  <a href="#about" class="mobile-nav-link" onclick="toggleMenu()" data-ja="会社概要" data-en="About" data-ko="회사 개요">会社概要</a>
+  <a href="#business" class="mobile-nav-link" onclick="toggleMenu()" data-ja="事業内容" data-en="Business" data-ko="사업 내용">事業内容</a>
+  <a href="#stores" class="mobile-nav-link" onclick="toggleMenu()" data-ja="店舗一覧" data-en="Stores" data-ko="매장 목록">店舗一覧</a>
+  <a href="#recruit" class="mobile-nav-link" onclick="toggleMenu()" data-ja="採用情報" data-en="Careers" data-ko="채용 정보">採用情報</a>
+  <a href="#contact" class="mobile-nav-link" onclick="toggleMenu()" data-ja="お問い合わせ" data-en="Contact" data-ko="문의하기">お問い合わせ</a>
 </div>
 
 <!-- ===== HERO ===== -->
 <section id="hero">
   <div class="max-w-4xl mx-auto px-6 w-full text-center" style="padding-top:72px;padding-bottom:60px;">
-    <div class="reveal" style="font-family:'Cormorant Garamond',serif;letter-spacing:0.35em;font-size:0.68rem;color:var(--gold);text-transform:uppercase;margin-bottom:20px;" data-ja="世界中のコレクターへ" data-en="FOR COLLECTORS WORLDWIDE">世界中のコレクターへ</div>
+    <div class="reveal" style="font-family:'Cormorant Garamond',serif;letter-spacing:0.35em;font-size:0.68rem;color:var(--gold);text-transform:uppercase;margin-bottom:20px;" data-ja="世界中のコレクターへ" data-en="FOR COLLECTORS WORLDWIDE" data-ko="전 세계 컬렉터들에게">世界中のコレクターへ</div>
     <h1 class="reveal" style="font-family:'Playfair Display',serif;font-size:clamp(4rem,10vw,7rem);line-height:1.0;transition-delay:0.1s;">
       <span class="gold-text">MIKI</span><br>
       <span style="color:var(--text-primary);">COMPANY</span>
     </h1>
     <div class="gold-divider reveal" style="margin:28px auto;transition-delay:0.2s;"></div>
-    <p class="reveal" style="font-size:clamp(1.1rem,2.5vw,1.35rem);font-weight:300;letter-spacing:0.06em;line-height:1.9;color:var(--text-primary);margin-bottom:16px;transition-delay:0.3s;" data-ja="世界中のコレクターに 最高の一枚を届ける" data-en="Delivering the finest cards to collectors worldwide">
+    <p class="reveal" style="font-size:clamp(1.1rem,2.5vw,1.35rem);font-weight:300;letter-spacing:0.06em;line-height:1.9;color:var(--text-primary);margin-bottom:16px;transition-delay:0.3s;" data-ja="世界中のコレクターに 最高の一枚を届ける" data-en="Delivering the finest cards to collectors worldwide" data-ko="전 세계 컬렉터들에게 최고의 한 장을 전달한다">
       世界中のコレクターに　最高の一枚を届ける
     </p>
-    <p class="reveal" style="font-size:0.85rem;color:var(--text-secondary);line-height:2.1;max-width:520px;margin:0 auto 40px;transition-delay:0.4s;" data-ja="トレーディングカードの価値を再定義し、リアルとデジタルを融合した新しいコレクション体験を創造します。" data-en="Redefining the value of trading cards, creating new collection experiences that merge the real and digital worlds.">
+    <p class="reveal" style="font-size:0.85rem;color:var(--text-secondary);line-height:2.1;max-width:520px;margin:0 auto 40px;transition-delay:0.4s;" data-ja="トレーディングカードの価値を再定義し、リアルとデジタルを融合した新しいコレクション体験を創造します。" data-en="Redefining the value of trading cards, creating new collection experiences that merge the real and digital worlds." data-ko="트레이딩 카드의 가치를 재정의하고, 리얼과 디지털을 융합한 새로운 컬렉션 경험을 창조합니다.">
       トレーディングカードの価値を再定義し、リアルとデジタルを融合した新しいコレクション体験を創造します。
     </p>
     <div class="reveal" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;transition-delay:0.5s;">
-      <a href="#stores" class="btn-primary" data-ja="店舗を見る →" data-en="View Stores →">店舗を見る →</a>
-      <a href="#contact" class="btn-outline" data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</a>
+      <a href="#stores" class="btn-primary" data-ja="店舗を見る →" data-en="View Stores →" data-ko="매장 보기 →">店舗を見る →</a>
+      <a href="#contact" class="btn-outline" data-ja="お問い合わせ" data-en="Contact Us" data-ko="문의하기">お問い合わせ</a>
     </div>
   </div>
   <div style="position:absolute;bottom:32px;left:50%;animation:bounce 2s infinite;">
@@ -199,9 +201,9 @@
 <section id="stores" style="background:var(--bg-secondary);">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center reveal" style="margin-bottom:64px;">
-      <div class="section-tag" style="margin-bottom:16px;" data-ja="店舗一覧" data-en="OUR STORES">店舗一覧</div>
+      <div class="section-tag" style="margin-bottom:16px;" data-ja="店舗一覧" data-en="OUR STORES" data-ko="매장 목록">店舗一覧</div>
       <img src="./torecasoul(01).jpg" alt="TORECASOUL" style="height:80px;width:auto;margin:0 auto 16px;display:block;border-radius:6px;">
-      <p style="font-size:0.83rem;color:var(--text-secondary);line-height:2;max-width:420px;margin:0 auto 16px;" data-ja="全国3店舗展開中。あなたのお近くの店舗をご利用ください。" data-en="3 stores nationwide. Visit the store nearest to you.">全国3店舗展開中。あなたのお近くの店舗をご利用ください。</p>
+      <p style="font-size:0.83rem;color:var(--text-secondary);line-height:2;max-width:420px;margin:0 auto 16px;" data-ja="全国3店舗展開中。あなたのお近くの店舗をご利用ください。" data-en="3 stores nationwide. Visit the store nearest to you." data-ko="전국 3개 매장 운영 중. 가까운 매장을 이용해 주세요.">全国3店舗展開中。あなたのお近くの店舗をご利用ください。</p>
       <div class="gold-divider" style="margin:0 auto;"></div>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
@@ -212,7 +214,7 @@
         <div class="store-overlay"></div>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:24px;">
           <div style="font-family:'Cormorant Garamond',serif;color:var(--gold);letter-spacing:0.28em;font-size:0.62rem;margin-bottom:6px;">YOKOHAMA</div>
-          <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;" data-ja="横浜店" data-en="Yokohama Store">横浜店</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;" data-ja="横浜店" data-en="Yokohama Store" data-ko="요코하마점">横浜店</div>
           <div style="width:34px;height:34px;border:1px solid rgba(201,168,76,0.45);display:flex;align-items:center;justify-content:center;color:var(--gold);transition:all 0.3s;" class="store-arrow">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
@@ -225,7 +227,7 @@
         <div class="store-overlay"></div>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:24px;">
           <div style="font-family:'Cormorant Garamond',serif;color:var(--gold);letter-spacing:0.28em;font-size:0.62rem;margin-bottom:6px;">AKIHABARA</div>
-          <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;" data-ja="秋葉原店" data-en="Akihabara Store">秋葉原店</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;" data-ja="秋葉原店" data-en="Akihabara Store" data-ko="아키하바라점">秋葉原店</div>
           <div style="width:34px;height:34px;border:1px solid rgba(201,168,76,0.45);display:flex;align-items:center;justify-content:center;color:var(--gold);transition:all 0.3s;" class="store-arrow">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
@@ -238,7 +240,7 @@
         <div class="store-overlay"></div>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:24px;">
           <div style="font-family:'Cormorant Garamond',serif;color:var(--gold);letter-spacing:0.28em;font-size:0.62rem;margin-bottom:6px;">KASHIWA</div>
-          <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;" data-ja="柏店" data-en="Kashiwa Store">柏店</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;" data-ja="柏店" data-en="Kashiwa Store" data-ko="가시와점">柏店</div>
           <div style="width:34px;height:34px;border:1px solid rgba(201,168,76,0.45);display:flex;align-items:center;justify-content:center;color:var(--gold);transition:all 0.3s;" class="store-arrow">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
@@ -252,8 +254,8 @@
 <section id="about" style="background:var(--bg-primary);">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center reveal" style="margin-bottom:64px;">
-      <div class="section-tag" style="margin-bottom:12px;" data-ja="会社概要" data-en="ABOUT US">会社概要</div>
-      <h2 class="section-title gold-text" style="margin-bottom:16px;" data-ja="私たちについて" data-en="About MIKI COMPANY">私たちについて</h2>
+      <div class="section-tag" style="margin-bottom:12px;" data-ja="会社概要" data-en="ABOUT US" data-ko="회사 개요">会社概要</div>
+      <h2 class="section-title gold-text" style="margin-bottom:16px;" data-ja="私たちについて" data-en="About MIKI COMPANY" data-ko="저희에 대하여">私たちについて</h2>
       <div class="gold-divider" style="margin:0 auto;"></div>
     </div>
 
@@ -261,56 +263,56 @@
     <div class="grid grid-cols-3 gap-4 reveal" style="margin-bottom:72px;">
       <div class="stat-item">
         <div class="stat-number">2018</div>
-        <div style="font-size:0.68rem;letter-spacing:0.2em;color:var(--text-secondary);margin-top:8px;" data-ja="設立年" data-en="FOUNDED">設立年</div>
+        <div style="font-size:0.68rem;letter-spacing:0.2em;color:var(--text-secondary);margin-top:8px;" data-ja="設立年" data-en="FOUNDED" data-ko="설립 연도">設立年</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">500<span style="font-size:1.4rem;">万</span></div>
-        <div style="font-size:0.68rem;letter-spacing:0.2em;color:var(--text-secondary);margin-top:8px;" data-ja="資本金" data-en="CAPITAL">資本金</div>
+        <div style="font-size:0.68rem;letter-spacing:0.2em;color:var(--text-secondary);margin-top:8px;" data-ja="資本金" data-en="CAPITAL" data-ko="자본금">資本金</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">∞</div>
-        <div style="font-size:0.68rem;letter-spacing:0.2em;color:var(--text-secondary);margin-top:8px;" data-ja="可能性" data-en="POTENTIAL">可能性</div>
+        <div style="font-size:0.68rem;letter-spacing:0.2em;color:var(--text-secondary);margin-top:8px;" data-ja="可能性" data-en="POTENTIAL" data-ko="가능성">可能性</div>
       </div>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-16 items-start">
       <div class="reveal">
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.7rem;line-height:1.5;margin-bottom:24px;" data-ja="カードの価値を<br>再定義する" data-en="Redefining the<br>Value of Cards">カードの価値を<br>再定義する</h3>
-        <p style="font-size:0.85rem;color:var(--text-secondary);line-height:2.3;margin-bottom:32px;" data-ja="株式会社MIKI COMPANYは、トレーディングカードの販売・買取を核事業として、コレクションの価値向上とアセット性に着目したサービスを提供しています。リアルとデジタルを融合した新しいTCG体験の創造に挑戦し続けています。" data-en="MIKI COMPANY provides services centered on TCG sales and purchase, focusing on increasing collection value and asset potential. We continue to create new TCG experiences that merge the real and digital worlds.">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.7rem;line-height:1.5;margin-bottom:24px;" data-ja="カードの価値を<br>再定義する" data-en="Redefining the<br>Value of Cards" data-ko="카드의 가치를<br>재정의하다">カードの価値を<br>再定義する</h3>
+        <p style="font-size:0.85rem;color:var(--text-secondary);line-height:2.3;margin-bottom:32px;" data-ja="株式会社MIKI COMPANYは、トレーディングカードの販売・買取を核事業として、コレクションの価値向上とアセット性に着目したサービスを提供しています。リアルとデジタルを融合した新しいTCG体験の創造に挑戦し続けています。" data-en="MIKI COMPANY provides services centered on TCG sales and purchase, focusing on increasing collection value and asset potential. We continue to create new TCG experiences that merge the real and digital worlds." data-ko="주식회사 MIKI COMPANY는 트레이딩 카드 판매·매입을 핵심 사업으로, 컬렉션의 가치 향상과 자산성에 주목한 서비스를 제공하고 있습니다. 리얼과 디지털을 융합한 새로운 TCG 경험 창조에 도전하고 있습니다.">
           株式会社MIKI COMPANYは、トレーディングカードの販売・買取を核事業として、コレクションの価値向上とアセット性に着目したサービスを提供しています。リアルとデジタルを融合した新しいTCG体験の創造に挑戦し続けています。
         </p>
         <div style="border-left:1px solid rgba(201,168,76,0.3);padding-left:20px;display:flex;flex-direction:column;gap:16px;">
           <div>
-            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="会社名" data-en="COMPANY">会社名</div>
-            <div style="font-size:0.9rem;" data-ja="株式会社 MIKI COMPANY" data-en="MIKI COMPANY Co., Ltd.">株式会社 MIKI COMPANY</div>
+            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="会社名" data-en="COMPANY" data-ko="회사명">会社名</div>
+            <div style="font-size:0.9rem;" data-ja="株式会社 MIKI COMPANY" data-en="MIKI COMPANY Co., Ltd." data-ko="주식회사 MIKI COMPANY">株式会社 MIKI COMPANY</div>
           </div>
           <div>
-            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="所在地" data-en="LOCATION">所在地</div>
-            <div style="font-size:0.88rem;line-height:1.7;" data-ja="〒160-0004 東京都新宿区四谷四丁目 30番地23<br>ビルド吉田 401号室" data-en="Build Yoshida 401, 4-30-23 Yotsuya,<br>Shinjuku-ku, Tokyo 160-0004">〒160-0004 東京都新宿区四谷四丁目 30番地23<br>ビルド吉田 401号室</div>
+            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="所在地" data-en="LOCATION" data-ko="소재지">所在地</div>
+            <div style="font-size:0.88rem;line-height:1.7;" data-ja="〒160-0004 東京都新宿区四谷四丁目 30番地23<br>ビルド吉田 401号室" data-en="Build Yoshida 401, 4-30-23 Yotsuya,<br>Shinjuku-ku, Tokyo 160-0004" data-ko="〒160-0004 도쿄도 신주쿠구 요쓰야 4-30-23<br>빌드 요시다 401호">〒160-0004 東京都新宿区四谷四丁目 30番地23<br>ビルド吉田 401号室</div>
           </div>
           <div>
-            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="設立年月日" data-en="ESTABLISHED">設立年月日</div>
-            <div style="font-size:0.9rem;" data-ja="平成 30年12月19日" data-en="December 19, 2018">平成 30年12月19日</div>
+            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="設立年月日" data-en="ESTABLISHED" data-ko="설립일">設立年月日</div>
+            <div style="font-size:0.9rem;" data-ja="平成 30年12月19日" data-en="December 19, 2018" data-ko="2018년 12월 19일">平成 30年12月19日</div>
           </div>
           <div>
-            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="代表者名" data-en="REPRESENTATIVE">代表者名</div>
+            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="代表者名" data-en="REPRESENTATIVE" data-ko="대표자명">代表者名</div>
             <div style="font-size:0.9rem;">黒澤 美希</div>
           </div>
           <div>
-            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="資本金" data-en="CAPITAL">資本金</div>
-            <div style="font-size:0.9rem;" data-ja="500万円" data-en="¥5,000,000">500万円</div>
+            <div style="font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:4px;" data-ja="資本金" data-en="CAPITAL" data-ko="자본금">資本金</div>
+            <div style="font-size:0.9rem;" data-ja="500万円" data-en="¥5,000,000" data-ko="500만 엔">500万円</div>
           </div>
         </div>
       </div>
 
       <div class="reveal" style="transition-delay:0.2s;">
         <div style="background:rgba(201,168,76,0.035);border:1px solid rgba(201,168,76,0.15);padding:40px;">
-          <div style="font-size:0.65rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:16px;" data-ja="VISION" data-en="VISION">VISION</div>
-          <blockquote style="font-size:1.25rem;font-weight:400;line-height:1.8;margin-bottom:20px;color:var(--text-primary);" data-ja="&quot;カードの価値を再定義し、世界を繋ぐ&quot;" data-en="&quot;Redefining the value of cards, connecting the world&quot;">
+          <div style="font-size:0.65rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:16px;" data-ja="VISION" data-en="VISION" data-ko="VISION">VISION</div>
+          <blockquote style="font-size:1.25rem;font-weight:400;line-height:1.8;margin-bottom:20px;color:var(--text-primary);" data-ja="&quot;カードの価値を再定義し、世界を繋ぐ&quot;" data-en="&quot;Redefining the value of cards, connecting the world&quot;" data-ko="&quot;카드의 가치를 재정의하고, 세계를 잇다&quot;">
             "カードの価値を再定義し、世界を繋ぐ"
           </blockquote>
           <div class="gold-divider" style="margin-bottom:20px;"></div>
-          <p style="font-size:0.83rem;color:var(--text-secondary);line-height:2.1;" data-ja="日本の伝統的なTCG文化を革新的なサービスで世界中に広め、国境を越えたコミュニティを創造します。私たちは、ただのカードショップではなく、プレイヤーの想い出と情熱を守るパートナーであり続けます。" data-en="We spread Japan's traditional TCG culture around the world through innovative services, creating communities that transcend borders. We are not just a card shop — we are a partner who protects players' memories and passion.">日本の伝統的なTCG文化を革新的なサービスで世界中に広め、国境を越えたコミュニティを創造します。私たちは、ただのカードショップではなく、プレイヤーの想い出と情熱を守るパートナーであり続けます。</p>
+          <p style="font-size:0.83rem;color:var(--text-secondary);line-height:2.1;" data-ja="日本の伝統的なTCG文化を革新的なサービスで世界中に広め、国境を越えたコミュニティを創造します。私たちは、ただのカードショップではなく、プレイヤーの想い出と情熱を守るパートナーであり続けます。" data-en="We spread Japan's traditional TCG culture around the world through innovative services, creating communities that transcend borders. We are not just a card shop — we are a partner who protects players' memories and passion." data-ko="일본의 전통적인 TCG 문화를 혁신적인 서비스로 전 세계에 알리고, 국경을 초월한 커뮤니티를 창조합니다. 저희는 단순한 카드 숍이 아닌, 플레이어들의 추억과 열정을 지키는 파트너로 함께하겠습니다.">日本の伝統的なTCG文化を革新的なサービスで世界中に広め、国境を越えたコミュニティを創造します。私たちは、ただのカードショップではなく、プレイヤーの想い出と情熱を守るパートナーであり続けます。</p>
         </div>
       </div>
     </div>
@@ -321,9 +323,9 @@
 <section id="business">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center reveal" style="margin-bottom:64px;">
-      <div class="section-tag" style="margin-bottom:12px;" data-ja="事業内容" data-en="BUSINESS">事業内容</div>
-      <h2 class="section-title" style="margin-bottom:20px;font-family:'Noto Sans JP',sans-serif;font-weight:400;font-size:clamp(1rem,2.5vw,1.4rem);color:var(--text-primary);" data-ja='"世界中のコレクターへ最高の1枚を届ける<br>TCGプロフェッショナル集団です"' data-en='"We are TCG professionals delivering<br>the finest cards to collectors worldwide"'>"世界中のコレクターへ最高の1枚を届ける<br>TCGプロフェッショナル集団です"</h2>
-      <p class="reveal" style="font-size:0.85rem;color:var(--text-secondary);line-height:2;max-width:660px;margin:0 auto 24px;" data-ja="私たちは、トレーディングカードの可能性を最大限に引き出す、総合カード流通カンパニーです。カードの販売・買取業務だけでなく、コレクションの価値向上や資産性にも着目し、リアルとデジタルを融合させた新しい体験を創出しています。" data-en="We are a comprehensive card distribution company that maximizes the potential of trading cards. Beyond card sales and purchases, we focus on increasing collection value and asset potential, creating new experiences that merge the real and digital worlds.">私たちは、トレーディングカードの可能性を最大限に引き出す、総合カード流通カンパニーです。カードの販売・買取業務だけでなく、コレクションの価値向上や資産性にも着目し、リアルとデジタルを融合させた新しい体験を創出しています。</p>
+      <div class="section-tag" style="margin-bottom:12px;" data-ja="事業内容" data-en="BUSINESS" data-ko="사업 내용" data-ko="사업 내용">事業内容</div>
+      <h2 class="section-title" style="margin-bottom:20px;font-family:'Noto Sans JP',sans-serif;font-weight:400;font-size:clamp(1rem,2.5vw,1.4rem);color:var(--text-primary);" data-ja='"世界中のコレクターへ最高の1枚を届ける<br>TCGプロフェッショナル集団です"' data-en='"We are TCG professionals delivering<br>the finest cards to collectors worldwide"' data-ko='"전 세계 컬렉터들에게 최고의 한 장을 전달하는<br>TCG 전문가 집단입니다"'>"世界中のコレクターへ最高の1枚を届ける<br>TCGプロフェッショナル集団です"</h2>
+      <p class="reveal" style="font-size:0.85rem;color:var(--text-secondary);line-height:2;max-width:660px;margin:0 auto 24px;" data-ja="私たちは、トレーディングカードの可能性を最大限に引き出す、総合カード流通カンパニーです。カードの販売・買取業務だけでなく、コレクションの価値向上や資産性にも着目し、リアルとデジタルを融合させた新しい体験を創出しています。" data-en="We are a comprehensive card distribution company that maximizes the potential of trading cards. Beyond card sales and purchases, we focus on increasing collection value and asset potential, creating new experiences that merge the real and digital worlds." data-ko="저희는 트레이딩 카드의 가능성을 최대한 이끌어내는 종합 카드 유통 기업입니다. 카드 판매·매입 업무뿐만 아니라 컬렉션의 가치 향상과 자산성에도 주목하여 리얼과 디지털을 융합한 새로운 경험을 창출하고 있습니다.">私たちは、トレーディングカードの可能性を最大限に引き出す、総合カード流通カンパニーです。カードの販売・買取業務だけでなく、コレクションの価値向上や資産性にも着目し、リアルとデジタルを融合させた新しい体験を創出しています。</p>
       <div class="gold-divider" style="margin:0 auto;"></div>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
@@ -331,22 +333,22 @@
         <div style="width:48px;height:48px;border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </div>
-        <h3 style="font-size:0.92rem;font-weight:500;letter-spacing:0.1em;margin-bottom:12px;" data-ja="トレカ販売・買取" data-en="TCG Sales & Purchase">トレカ販売・買取</h3>
-        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:2.1;" data-ja="遊戯王・ポケモンカードをはじめとする高額TCGの厳選買取・販売。適正価格での査定と安心の取引をお約束します。" data-en="We buy and sell high-value TCGs including Yu-Gi-Oh! and Pokémon cards, with fair appraisals and reliable transactions.">遊戯王・ポケモンカードをはじめとする高額TCGの厳選買取・販売。適正価格での査定と安心の取引をお約束します。</p>
+        <h3 style="font-size:0.92rem;font-weight:500;letter-spacing:0.1em;margin-bottom:12px;" data-ja="トレカ販売・買取" data-en="TCG Sales & Purchase" data-ko="트레카 판매·매입">トレカ販売・買取</h3>
+        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:2.1;" data-ja="遊戯王・ポケモンカードをはじめとする高額TCGの厳選買取・販売。適正価格での査定と安心の取引をお約束します。" data-en="We buy and sell high-value TCGs including Yu-Gi-Oh! and Pokémon cards, with fair appraisals and reliable transactions." data-ko="유희왕·포켓몬 카드 등 고가 TCG를 엄선하여 매입·판매. 적정 가격 감정과 안심 거래를 약속드립니다.">遊戯王・ポケモンカードをはじめとする高額TCGの厳選買取・販売。適正価格での査定と安心の取引をお約束します。</p>
       </div>
       <div class="biz-card reveal" style="transition-delay:0.12s;">
         <div style="width:48px;height:48px;border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
         </div>
-        <h3 style="font-size:0.92rem;font-weight:500;letter-spacing:0.1em;margin-bottom:12px;" data-ja="コレクション価値向上" data-en="Collection Value Enhancement">コレクション価値向上</h3>
-        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:2.1;" data-ja="コレクションのアセット価値に着目したアドバイスを提供。価値ある一枚を見つけるサポートをします。" data-en="We provide advice focused on the asset value of your collection, helping you find cards that truly matter.">コレクションのアセット価値に着目したアドバイスを提供。価値ある一枚を見つけるサポートをします。</p>
+        <h3 style="font-size:0.92rem;font-weight:500;letter-spacing:0.1em;margin-bottom:12px;" data-ja="コレクション価値向上" data-en="Collection Value Enhancement" data-ko="컬렉션 가치 향상">コレクション価値向上</h3>
+        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:2.1;" data-ja="コレクションのアセット価値に着目したアドバイスを提供。価値ある一枚を見つけるサポートをします。" data-en="We provide advice focused on the asset value of your collection, helping you find cards that truly matter." data-ko="컬렉션의 자산 가치에 주목한 조언을 제공. 가치 있는 한 장을 찾는 것을 지원합니다.">コレクションのアセット価値に着目したアドバイスを提供。価値ある一枚を見つけるサポートをします。</p>
       </div>
       <div class="biz-card reveal" style="transition-delay:0.24s;">
         <div style="width:48px;height:48px;border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         </div>
-        <h3 style="font-size:0.92rem;font-weight:500;letter-spacing:0.1em;margin-bottom:12px;" data-ja="リアル×デジタル体験" data-en="Real × Digital Experience">リアル×デジタル体験</h3>
-        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:2.1;" data-ja="実店舗とオンラインを融合した新しいTCG体験を提供。日本のTCG文化をグローバルに届けます。" data-en="New TCG experiences combining physical stores and online platforms, delivering Japan's TCG culture globally.">実店舗とオンラインを融合した新しいTCG体験を提供。日本のTCG文化をグローバルに届けます。</p>
+        <h3 style="font-size:0.92rem;font-weight:500;letter-spacing:0.1em;margin-bottom:12px;" data-ja="リアル×デジタル体験" data-en="Real × Digital Experience" data-ko="리얼×디지털 체험">リアル×デジタル体験</h3>
+        <p style="font-size:0.82rem;color:var(--text-secondary);line-height:2.1;" data-ja="実店舗とオンラインを融合した新しいTCG体験を提供。日本のTCG文化をグローバルに届けます。" data-en="New TCG experiences combining physical stores and online platforms, delivering Japan's TCG culture globally." data-ko="실매장과 온라인을 융합한 새로운 TCG 경험을 제공. 일본의 TCG 문화를 전 세계에 전달합니다.">実店舗とオンラインを融合した新しいTCG体験を提供。日本のTCG文化をグローバルに届けます。</p>
       </div>
     </div>
   </div>
@@ -356,9 +358,9 @@
 <section id="recruit">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center reveal" style="margin-bottom:64px;">
-      <div class="section-tag" style="margin-bottom:12px;" data-ja="採用情報" data-en="CAREERS">採用情報</div>
-      <h2 class="section-title gold-text" style="margin-bottom:12px;" data-ja='"好き"を仕事に、カードの未来を創る' data-en='"Turn your passion into work, create the future of cards"'>"好き"を仕事に、カードの未来を創る</h2>
-      <p style="font-size:0.83rem;color:var(--text-secondary);line-height:2;max-width:480px;margin:0 auto 16px;" data-ja="求める人物像：TCGが好きな方、トレンドに敏感な方、真摯に接客ができる方" data-en="Looking for: TCG enthusiasts, trend-savvy individuals, and customer service-oriented people">求める人物像：TCGが好きな方、トレンドに敏感な方、真摯に接客ができる方</p>
+      <div class="section-tag" style="margin-bottom:12px;" data-ja="採用情報" data-en="CAREERS" data-ko="채용 정보" data-ko="채용 정보">採用情報</div>
+      <h2 class="section-title gold-text" style="margin-bottom:12px;" data-ja='"好き"を仕事に、カードの未来を創る' data-en='"Turn your passion into work, create the future of cards"' data-ko='"좋아하는 것"을 일로, 카드의 미래를 만들다'>"好き"を仕事に、カードの未来を創る</h2>
+      <p style="font-size:0.83rem;color:var(--text-secondary);line-height:2;max-width:480px;margin:0 auto 16px;" data-ja="求める人物像：TCGが好きな方、トレンドに敏感な方、真摯に接客ができる方" data-en="Looking for: TCG enthusiasts, trend-savvy individuals, and customer service-oriented people" data-ko="찾는 인재상: TCG를 좋아하는 분, 트렌드에 민감한 분, 성실하게 고객 응대 가능한 분">求める人物像：TCGが好きな方、トレンドに敏感な方、真摯に接客ができる方</p>
       <div class="gold-divider" style="margin:0 auto;"></div>
     </div>
 
@@ -369,28 +371,28 @@
           <!-- Shield / Insurance -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
-        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="社会保険完備" data-en="Full Insurance">社会保険完備</div>
+        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="社会保険完備" data-en="Full Insurance" data-ko="4대보험 완비">社会保険完備</div>
       </div>
       <div style="text-align:center;padding:28px 16px;background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.1);">
         <div style="display:flex;justify-content:center;margin-bottom:12px;">
           <!-- Tag / Discount -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><circle cx="7" cy="7" r="1.5" fill="#c9a84c" stroke="none"/></svg>
         </div>
-        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="従業員割引" data-en="Staff Discount">従業員割引</div>
+        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="従業員割引" data-en="Staff Discount" data-ko="직원 할인">従業員割引</div>
       </div>
       <div style="text-align:center;padding:28px 16px;background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.1);">
         <div style="display:flex;justify-content:center;margin-bottom:12px;">
           <!-- Star / Free dress -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M5.5 21a8.38 8.38 0 0113 0"/><path d="M12 10v4M10 14h4"/></svg>
         </div>
-        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="服装自由" data-en="Casual Dress">服装自由</div>
+        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="服装自由" data-en="Casual Dress" data-ko="복장 자유">服装自由</div>
       </div>
       <div style="text-align:center;padding:28px 16px;background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.1);">
         <div style="display:flex;justify-content:center;margin-bottom:12px;">
           <!-- Diamond / Individuality -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 9 18 21 6 21 2 9"/><line x1="12" y1="2" x2="12" y2="21"/><line x1="2" y1="9" x2="22" y2="9"/></svg>
         </div>
-        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="個性を尊重" data-en="Individuality">個性を尊重</div>
+        <div style="font-size:0.68rem;letter-spacing:0.12em;color:var(--gold);" data-ja="個性を尊重" data-en="Individuality" data-ko="개성 존중">個性を尊重</div>
       </div>
     </div>
 
@@ -399,26 +401,26 @@
       <div class="recruit-row reveal">
         <div>
           <div style="font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);margin-bottom:6px;">POSITION 01</div>
-          <div style="font-size:0.95rem;font-weight:500;margin-bottom:6px;" data-ja="店舗スタッフ" data-en="Store Staff">店舗スタッフ</div>
-          <div style="font-size:0.8rem;color:var(--text-secondary);" data-ja="店頭での接客・買取査定・カード管理 / TCG経験者歓迎" data-en="In-store service, purchase appraisal, card management / TCG experience welcome">店頭での接客・買取査定・カード管理 / TCG経験者歓迎</div>
+          <div style="font-size:0.95rem;font-weight:500;margin-bottom:6px;" data-ja="店舗スタッフ" data-en="Store Staff" data-ko="매장 스태프">店舗スタッフ</div>
+          <div style="font-size:0.8rem;color:var(--text-secondary);" data-ja="店頭での接客・買取査定・カード管理 / TCG経験者歓迎" data-en="In-store service, purchase appraisal, card management / TCG experience welcome" data-ko="매장 응대·매입 감정·카드 관리 / TCG 경험자 환영">店頭での接客・買取査定・カード管理 / TCG経験者歓迎</div>
         </div>
-        <a href="#contact" class="btn-outline" style="flex-shrink:0;font-size:0.7rem;padding:10px 20px;" data-ja="応募する" data-en="Apply">応募する</a>
+        <a href="#contact" class="btn-outline" style="flex-shrink:0;font-size:0.7rem;padding:10px 20px;" data-ja="応募する" data-en="Apply" data-ko="지원하기">応募する</a>
       </div>
       <div class="recruit-row reveal" style="transition-delay:0.1s;">
         <div>
           <div style="font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);margin-bottom:6px;">POSITION 02</div>
-          <div style="font-size:0.95rem;font-weight:500;margin-bottom:6px;" data-ja="EC運営事務" data-en="EC Operations">EC運営事務</div>
-          <div style="font-size:0.8rem;color:var(--text-secondary);" data-ja="オンラインショップの運営・商品登録・在庫管理 / EC経験者歓迎" data-en="Online shop management, product listing, inventory / EC experience welcome">オンラインショップの運営・商品登録・在庫管理 / EC経験者歓迎</div>
+          <div style="font-size:0.95rem;font-weight:500;margin-bottom:6px;" data-ja="EC運営事務" data-en="EC Operations" data-ko="EC 운영 사무">EC運営事務</div>
+          <div style="font-size:0.8rem;color:var(--text-secondary);" data-ja="オンラインショップの運営・商品登録・在庫管理 / EC経験者歓迎" data-en="Online shop management, product listing, inventory / EC experience welcome" data-ko="온라인 숍 운영·상품 등록·재고 관리 / EC 경험자 환영">オンラインショップの運営・商品登録・在庫管理 / EC経験者歓迎</div>
         </div>
-        <a href="#contact" class="btn-outline" style="flex-shrink:0;font-size:0.7rem;padding:10px 20px;" data-ja="応募する" data-en="Apply">応募する</a>
+        <a href="#contact" class="btn-outline" style="flex-shrink:0;font-size:0.7rem;padding:10px 20px;" data-ja="応募する" data-en="Apply" data-ko="지원하기">応募する</a>
       </div>
       <div class="recruit-row reveal" style="transition-delay:0.2s;">
         <div>
           <div style="font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);margin-bottom:6px;">POSITION 03</div>
-          <div style="font-size:0.95rem;font-weight:500;margin-bottom:6px;" data-ja="鑑定士" data-en="Card Appraiser">鑑定士</div>
-          <div style="font-size:0.8rem;color:var(--text-secondary);" data-ja="トレーディングカードの真贋鑑定・価値評価 / 専門知識を活かしたい方" data-en="Authentication and value assessment of trading cards / Expertise welcome">トレーディングカードの真贋鑑定・価値評価 / 専門知識を活かしたい方</div>
+          <div style="font-size:0.95rem;font-weight:500;margin-bottom:6px;" data-ja="鑑定士" data-en="Card Appraiser" data-ko="감정사">鑑定士</div>
+          <div style="font-size:0.8rem;color:var(--text-secondary);" data-ja="トレーディングカードの真贋鑑定・価値評価 / 専門知識を活かしたい方" data-en="Authentication and value assessment of trading cards / Expertise welcome" data-ko="트레이딩 카드 진위 감정·가치 평가 / 전문 지식을 활용하고 싶은 분">トレーディングカードの真贋鑑定・価値評価 / 専門知識を活かしたい方</div>
         </div>
-        <a href="#contact" class="btn-outline" style="flex-shrink:0;font-size:0.7rem;padding:10px 20px;" data-ja="応募する" data-en="Apply">応募する</a>
+        <a href="#contact" class="btn-outline" style="flex-shrink:0;font-size:0.7rem;padding:10px 20px;" data-ja="応募する" data-en="Apply" data-ko="지원하기">応募する</a>
       </div>
     </div>
   </div>
@@ -428,24 +430,24 @@
 <section id="contact" style="background:var(--bg-secondary);">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center reveal" style="margin-bottom:64px;">
-      <div class="section-tag" style="margin-bottom:12px;" data-ja="お問い合わせ" data-en="CONTACT">お問い合わせ</div>
-      <h2 class="section-title gold-text" style="margin-bottom:16px;" data-ja="ご連絡はこちら" data-en="Get In Touch">ご連絡はこちら</h2>
+      <div class="section-tag" style="margin-bottom:12px;" data-ja="お問い合わせ" data-en="CONTACT" data-ko="문의하기" data-ko="문의하기">お問い合わせ</div>
+      <h2 class="section-title gold-text" style="margin-bottom:16px;" data-ja="ご連絡はこちら" data-en="Get In Touch" data-ko="연락처">ご連絡はこちら</h2>
       <div class="gold-divider" style="margin:0 auto;"></div>
     </div>
     <div class="grid lg:grid-cols-2 gap-16">
       <!-- Info -->
       <div class="reveal" style="display:flex;flex-direction:column;gap:28px;">
         <div style="padding:24px;border:1px solid rgba(201,168,76,0.15);background:rgba(201,168,76,0.03);">
-          <div style="font-size:0.65rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:10px;" data-ja="一般のお問い合わせ" data-en="GENERAL INQUIRIES">一般のお問い合わせ</div>
-          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.9;" data-ja="商品や買取に関するご質問は<br>横浜店 X 公式アカウントへお送りください。" data-en="For questions about products and purchases,<br>please contact us via the Yokohama store X account.">商品や買取に関するご質問は<br>横浜店 X 公式アカウントへお送りください。</p>
+          <div style="font-size:0.65rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:10px;" data-ja="一般のお問い合わせ" data-en="GENERAL INQUIRIES" data-ko="일반 문의">一般のお問い合わせ</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.9;" data-ja="商品や買取に関するご質問は<br>横浜店 X 公式アカウントへお送りください。" data-en="For questions about products and purchases,<br>please contact us via the Yokohama store X account." data-ko="상품 및 매입에 관한 질문은<br>요코하마점 X 공식 계정으로 보내주세요.">商品や買取に関するご質問は<br>横浜店 X 公式アカウントへお送りください。</p>
         </div>
         <div style="padding:24px;border:1px solid rgba(201,168,76,0.15);background:rgba(201,168,76,0.03);">
-          <div style="font-size:0.65rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:10px;" data-ja="法人のお客様" data-en="CORPORATE CLIENTS">法人のお客様</div>
-          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.9;margin-bottom:8px;" data-ja="取引・取材等のご依頼は、メールでお願いします。" data-en="For business transactions and press inquiries, please contact us by email.">取引・取材等のご依頼は、メールでお願いします。</p>
+          <div style="font-size:0.65rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:10px;" data-ja="法人のお客様" data-en="CORPORATE CLIENTS" data-ko="법인 고객">法人のお客様</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.9;margin-bottom:8px;" data-ja="取引・取材等のご依頼は、メールでお願いします。" data-en="For business transactions and press inquiries, please contact us by email." data-ko="거래·취재 등의 의뢰는 이메일로 부탁드립니다.">取引・取材等のご依頼は、メールでお願いします。</p>
           <a href="mailto:info@miki-company.tokyo" style="font-size:0.85rem;color:var(--gold);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">info@miki-company.tokyo</a>
         </div>
         <div style="padding:24px;border:1px solid rgba(201,168,76,0.15);background:rgba(201,168,76,0.03);">
-          <div style="font-size:0.65rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:10px;" data-ja="対応時間" data-en="HOURS">対応時間</div>
+          <div style="font-size:0.65rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:10px;" data-ja="対応時間" data-en="HOURS" data-ko="운영 시간">対応時間</div>
           <div style="font-size:0.9rem;color:var(--text-primary);">10:00 〜 19:00</div>
         </div>
       </div>
@@ -454,33 +456,33 @@
       <div class="reveal" style="transition-delay:0.2s;">
         <form id="contactForm" action="https://formspree.io/f/xrejaywp" method="POST" onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:20px;">
           <div>
-            <label class="form-label" data-ja="お名前 *" data-en="Name *">お名前 *</label>
-            <input type="text" class="form-input" name="name" required placeholder="山田 太郎" data-placeholder-ja="山田 太郎" data-placeholder-en="Taro Yamada">
+            <label class="form-label" data-ja="お名前 *" data-en="Name *" data-ko="이름 *">お名前 *</label>
+            <input type="text" class="form-input" name="name" required placeholder="山田 太郎" data-placeholder-ja="山田 太郎" data-placeholder-en="Taro Yamada" data-placeholder-ko="홍길동">
           </div>
           <div>
-            <label class="form-label" data-ja="メールアドレス *" data-en="Email Address *">メールアドレス *</label>
+            <label class="form-label" data-ja="メールアドレス *" data-en="Email Address *" data-ko="이메일 주소 *">メールアドレス *</label>
             <input type="email" class="form-input" name="email" required placeholder="example@email.com">
           </div>
           <div>
-            <label class="form-label" data-ja="件名" data-en="Subject">件名</label>
+            <label class="form-label" data-ja="件名" data-en="Subject" data-ko="제목">件名</label>
             <select class="form-input" name="subject" style="cursor:pointer;">
-              <option value="" data-ja="選択してください" data-en="Please select">選択してください</option>
-              <option value="buy" data-ja="買取について" data-en="About selling">買取について</option>
-              <option value="purchase" data-ja="購入について" data-en="About purchasing">購入について</option>
-              <option value="recruit" data-ja="採用について" data-en="About careers">採用について</option>
-              <option value="other" data-ja="その他" data-en="Other">その他</option>
+              <option value="" data-ja="選択してください" data-en="Please select" data-ko="선택해 주세요">選択してください</option>
+              <option value="buy" data-ja="買取について" data-en="About selling" data-ko="매입에 대해">買取について</option>
+              <option value="purchase" data-ja="購入について" data-en="About purchasing" data-ko="구매에 대해">購入について</option>
+              <option value="recruit" data-ja="採用について" data-en="About careers" data-ko="채용에 대해">採用について</option>
+              <option value="other" data-ja="その他" data-en="Other" data-ko="기타">その他</option>
             </select>
           </div>
           <div>
-            <label class="form-label" data-ja="メッセージ *" data-en="Message *">メッセージ *</label>
-            <textarea class="form-input" name="message" rows="5" required placeholder="お問い合わせ内容をご記入ください" data-placeholder-ja="お問い合わせ内容をご記入ください" data-placeholder-en="Please enter your message" style="resize:vertical;"></textarea>
+            <label class="form-label" data-ja="メッセージ *" data-en="Message *" data-ko="메시지 *">メッセージ *</label>
+            <textarea class="form-input" name="message" rows="5" required placeholder="お問い合わせ内容をご記入ください" data-placeholder-ja="お問い合わせ内容をご記入ください" data-placeholder-en="Please enter your message" data-placeholder-ko="문의 내용을 입력해 주세요" style="resize:vertical;"></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="justify-content:center;" data-ja="送信する →" data-en="Send Message →">送信する →</button>
+          <button type="submit" class="btn-primary" style="justify-content:center;" data-ja="送信する →" data-en="Send Message →" data-ko="전송하기 →">送信する →</button>
         </form>
         <div id="successMsg" style="display:none;text-align:center;padding:48px;border:1px solid rgba(201,168,76,0.3);">
           <div style="font-size:2rem;margin-bottom:16px;color:var(--gold);">✓</div>
-          <p style="font-size:0.85rem;letter-spacing:0.12em;color:var(--gold);margin-bottom:8px;" data-ja="送信が完了しました" data-en="Message Sent">送信が完了しました</p>
-          <p style="font-size:0.78rem;color:var(--text-secondary);" data-ja="お問い合わせありがとうございます。担当者よりご連絡いたします。" data-en="Thank you for your inquiry. We will be in touch shortly.">お問い合わせありがとうございます。担当者よりご連絡いたします。</p>
+          <p style="font-size:0.85rem;letter-spacing:0.12em;color:var(--gold);margin-bottom:8px;" data-ja="送信が完了しました" data-en="Message Sent" data-ko="전송 완료">送信が完了しました</p>
+          <p style="font-size:0.78rem;color:var(--text-secondary);" data-ja="お問い合わせありがとうございます。担当者よりご連絡いたします。" data-en="Thank you for your inquiry. We will be in touch shortly." data-ko="문의해 주셔서 감사합니다. 담당자가 연락드리겠습니다.">お問い合わせありがとうございます。担当者よりご連絡いたします。</p>
         </div>
       </div>
     </div>
@@ -495,29 +497,29 @@
         <div style="margin-bottom:16px;">
           <img src="image/mikicompany_logo_cropped.png" alt="MIKI COMPANY" style="height:32px;width:auto;object-fit:contain;">
         </div>
-        <p style="font-size:0.78rem;color:var(--text-secondary);line-height:2;" data-ja="世界中のコレクターに最高の一枚を届ける" data-en="Delivering the finest cards to collectors worldwide">世界中のコレクターに最高の一枚を届ける</p>
+        <p style="font-size:0.78rem;color:var(--text-secondary);line-height:2;" data-ja="世界中のコレクターに最高の一枚を届ける" data-en="Delivering the finest cards to collectors worldwide" data-ko="전 세계 컬렉터들에게 최고의 한 장을 전달한다">世界中のコレクターに最高の一枚を届ける</p>
       </div>
       <div>
-        <div style="font-size:0.65rem;letter-spacing:0.28em;color:var(--gold);margin-bottom:16px;" data-ja="ナビゲーション" data-en="NAVIGATION">ナビゲーション</div>
+        <div style="font-size:0.65rem;letter-spacing:0.28em;color:var(--gold);margin-bottom:16px;" data-ja="ナビゲーション" data-en="NAVIGATION" data-ko="내비게이션">ナビゲーション</div>
         <ul style="display:flex;flex-direction:column;gap:10px;">
-          <li><a href="#about" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="会社概要" data-en="About">会社概要</a></li>
-          <li><a href="#business" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="事業内容" data-en="Business">事業内容</a></li>
-          <li><a href="#stores" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="店舗一覧" data-en="Stores">店舗一覧</a></li>
-          <li><a href="#recruit" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="採用情報" data-en="Careers">採用情報</a></li>
-          <li><a href="#contact" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+          <li><a href="#about" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="会社概要" data-en="About" data-ko="회사 개요">会社概要</a></li>
+          <li><a href="#business" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="事業内容" data-en="Business" data-ko="사업 내용">事業内容</a></li>
+          <li><a href="#stores" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="店舗一覧" data-en="Stores" data-ko="매장 목록">店舗一覧</a></li>
+          <li><a href="#recruit" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="採用情報" data-en="Careers" data-ko="채용 정보">採用情報</a></li>
+          <li><a href="#contact" style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="お問い合わせ" data-en="Contact" data-ko="문의하기">お問い合わせ</a></li>
         </ul>
       </div>
       <div>
-        <div style="font-size:0.65rem;letter-spacing:0.28em;color:var(--gold);margin-bottom:16px;" data-ja="店舗" data-en="STORES">店舗</div>
+        <div style="font-size:0.65rem;letter-spacing:0.28em;color:var(--gold);margin-bottom:16px;" data-ja="店舗" data-en="STORES" data-ko="매장">店舗</div>
         <ul style="display:flex;flex-direction:column;gap:10px;">
-          <li><a href="https://x.com/TCG_SOUL_YKH" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="TORECASOUL 横浜店" data-en="TORECASOUL Yokohama">TORECASOUL 横浜店</a></li>
-          <li><a href="https://x.com/TCG_SOUL_AKB" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="TORECASOUL 秋葉原店" data-en="TORECASOUL Akihabara">TORECASOUL 秋葉原店</a></li>
-          <li><a href="https://x.com/TCG_SOUL_CHB" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="TORECASOUL 柏店" data-en="TORECASOUL Kashiwa">TORECASOUL 柏店</a></li>
+          <li><a href="https://x.com/TCG_SOUL_YKH" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="TORECASOUL 横浜店" data-en="TORECASOUL Yokohama" data-ko="TORECASOUL 요코하마점">TORECASOUL 横浜店</a></li>
+          <li><a href="https://x.com/TCG_SOUL_AKB" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="TORECASOUL 秋葉原店" data-en="TORECASOUL Akihabara" data-ko="TORECASOUL 아키하바라점">TORECASOUL 秋葉原店</a></li>
+          <li><a href="https://x.com/TCG_SOUL_CHB" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-secondary)'" data-ja="TORECASOUL 柏店" data-en="TORECASOUL Kashiwa" data-ko="TORECASOUL 가시와점">TORECASOUL 柏店</a></li>
         </ul>
       </div>
     </div>
     <div style="border-top:1px solid rgba(201,168,76,0.1);padding-top:24px;display:flex;flex-direction:column;align-items:center;gap:12px;" class="md:flex-row md:justify-between">
-      <p style="font-size:0.72rem;color:var(--text-secondary);" data-ja="© 2018 株式会社 MIKI COMPANY. All rights reserved." data-en="© 2018 MIKI COMPANY Co., Ltd. All rights reserved.">© 2018 株式会社 MIKI COMPANY. All rights reserved.</p>
+      <p style="font-size:0.72rem;color:var(--text-secondary);" data-ja="© 2018 株式会社 MIKI COMPANY. All rights reserved." data-en="© 2018 MIKI COMPANY Co., Ltd. All rights reserved." data-ko="© 2018 주식회사 MIKI COMPANY. All rights reserved.">© 2018 株式会社 MIKI COMPANY. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -527,16 +529,24 @@
 
   function setLang(l) {
     lang = l;
-    document.documentElement.lang = l === 'ja' ? 'ja' : 'en';
+    document.documentElement.lang = l === 'ja' ? 'ja' : l === 'ko' ? 'ko' : 'en';
     document.querySelectorAll('[data-ja]').forEach(el => {
-      const val = l === 'ja' ? el.getAttribute('data-ja') : el.getAttribute('data-en');
+      const val = l === 'ja' ? el.getAttribute('data-ja')
+                : l === 'ko' ? (el.getAttribute('data-ko') || el.getAttribute('data-en'))
+                : el.getAttribute('data-en');
       if (val) el.innerHTML = val;
     });
     document.querySelectorAll('[data-placeholder-ja]').forEach(el => {
-      el.placeholder = l === 'ja' ? el.getAttribute('data-placeholder-ja') : el.getAttribute('data-placeholder-en');
+      el.placeholder = l === 'ja' ? el.getAttribute('data-placeholder-ja')
+                     : l === 'ko' ? (el.getAttribute('data-placeholder-ko') || el.getAttribute('data-placeholder-en'))
+                     : el.getAttribute('data-placeholder-en');
     });
     document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', (btn.textContent === 'JP' && l === 'ja') || (btn.textContent === 'EN' && l === 'en'));
+      btn.classList.toggle('active',
+        (btn.textContent === 'JP' && l === 'ja') ||
+        (btn.textContent === 'EN' && l === 'en') ||
+        (btn.textContent === 'KO' && l === 'ko')
+      );
     });
   }
 
