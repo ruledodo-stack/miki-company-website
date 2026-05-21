@@ -9,7 +9,11 @@
       "Bash(git commit *)",
       "Bash(git branch *)",
       "Bash(git remote *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/hwansukjung/Downloads/333.png /Users/hwansukjung/Downloads/444.png)",
+      "Bash(convert --version)",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('/Users/hwansukjung/Downloads/333.png'\\); bbox = img.getbbox\\(\\); print\\('size:', img.size, 'bbox:', bbox\\)\")",
+      "Bash(python3)"
     ]
   }
 }
